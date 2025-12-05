@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Overview</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F2C5A',
+            "background-light": '#F8F9FA',
+            "background-dark": '#111827',
+          },
+          fontFamily: {
+            display: ['Inter', 'sans-serif'],
+          },
+          borderRadius: {
+            DEFAULT: '0.5rem', // 8px
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex h-screen">
+<aside class="w-64 bg-primary text-white flex flex-col fixed h-full">
+<div class="p-6">
+<div class="flex items-center gap-3">
+<div class="bg-white/10 p-2 rounded">
+<span class="material-icons-outlined text-white">business</span>
+</div>
+<div>
+<h1 class="font-bold text-lg">ReHub Portal</h1>
+<p class="text-xs text-white/70">Property Compliance</p>
+</div>
+</div>
+</div>
+<div class="p-4">
+<div class="flex items-center gap-3 bg-white/5 p-3 rounded-lg">
+<div class="bg-white/10 p-2 rounded-full">
+<span class="material-icons-outlined text-sm">person</span>
+</div>
+<div>
+<p class="font-semibold text-sm">fprice</p>
+<p class="text-xs text-white/60">fprice@maxwellkates.com</p>
+</div>
+</div>
+<div class="relative mt-4">
+<span class="material-icons-outlined absolute left-3 top-1/2 -translate-y-1/2 text-white/50 text-xl">search</span>
+<input class="w-full bg-white/10 border-none rounded-lg pl-10 pr-4 py-2 text-sm placeholder-white/50 focus:ring-2 focus:ring-blue-400" placeholder="Search navigation..." type="text"/>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<div class="px-2 py-2">
+<span class="text-xs font-semibold text-white/50 tracking-wider">OVERVIEW</span>
+<a class="flex items-center gap-3 mt-2 px-3 py-2.5 rounded-lg bg-white/10" href="#">
+<span class="material-icons-outlined">dashboard</span>
+<span class="font-semibold text-sm">Dashboard</span>
+</a>
+</div>
+<div class="px-2 py-2">
+<span class="text-xs font-semibold text-white/50 tracking-wider">PORTFOLIO MANAGEMENT</span>
+<div class="space-y-1 mt-2">
+<a class="flex items-center justify-between gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-icons-outlined text-xl">apartment</span>
+<span class="font-medium text-sm">Properties</span>
+</div>
+<span class="bg-gray-500/50 text-white text-xs font-semibold px-2 py-0.5 rounded-full">47</span>
+</a>
+<a class="flex items-center justify-between gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-icons-outlined text-xl">bar_chart</span>
+<span class="font-medium text-sm">Projects</span>
+</div>
+<span class="bg-gray-500/50 text-white text-xs font-semibold px-2 py-0.5 rounded-full">23</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">description</span>
+<span class="font-medium text-sm">Proposals</span>
+</a>
+<a class="flex items-center justify-between gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-icons-outlined text-xl">add_circle_outline</span>
+<span class="font-medium text-sm">Request Proposal</span>
+</div>
+<span class="bg-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded">NEW</span>
+</a>
+</div>
+</div>
+<div class="px-2 py-2">
+<span class="text-xs font-semibold text-white/50 tracking-wider">ACTION ITEMS</span>
+<div class="space-y-1 mt-2">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">schedule</span>
+<span class="font-medium text-sm">Scheduling</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">verified</span>
+<span class="font-medium text-sm">Attestation</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">bolt</span>
+<span class="font-medium text-sm">Energy Checklist</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">assignment</span>
+<span class="font-medium text-sm">Compliance Docs</span>
+</a>
+</div>
+</div>
+<div class="px-2 py-2">
+<span class="text-xs font-semibold text-white/50 tracking-wider">FINANCE</span>
+<a class="flex items-center justify-between gap-3 mt-2 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-icons-outlined text-xl">receipt_long</span>
+<span class="font-medium text-sm">Project Invoices</span>
+</div>
+<span class="bg-red-500 text-white text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full">78</span>
+</a>
+</div>
+</nav>
+<div class="p-4 mt-auto">
+<div class="space-y-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">settings</span>
+<span class="font-medium text-sm">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">help_outline</span>
+<span class="font-medium text-sm">Help &amp; Support</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-icons-outlined text-xl">logout</span>
+<span class="font-medium text-sm">Sign Out</span>
+</a>
+</div>
+</div>
+</aside>
+<main class="ml-64 flex-1 p-8 overflow-y-auto">
+<header class="flex justify-between items-center mb-6">
+<div>
+<h2 class="text-3xl font-bold text-gray-800 dark:text-white">Dashboard Overview</h2>
+<p class="text-gray-500 dark:text-gray-400">Welcome back, get a quick overview of your portfolio.</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative">
+<span class="material-icons-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-64 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg pl-10 pr-4 py-2 text-sm text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Search portfolio..." type="text"/>
+</div>
+<button class="bg-primary text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-icons-outlined text-xl">add</span>
+            New Project
+          </button>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2">Pending Invoices</p>
+<div class="flex items-center justify-between">
+<p class="text-4xl font-bold text-red-600 dark:text-red-400">78</p>
+<span class="material-icons-outlined text-red-500 dark:text-red-400 text-5xl opacity-20">receipt_long</span>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2">Total Properties</p>
+<div class="flex items-center justify-between">
+<p class="text-4xl font-bold text-gray-800 dark:text-white">47</p>
+<span class="material-icons-outlined text-primary dark:text-blue-400 text-5xl opacity-20">apartment</span>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2">Active Projects</p>
+<div class="flex items-center justify-between">
+<p class="text-4xl font-bold text-gray-800 dark:text-white">23</p>
+<span class="material-icons-outlined text-green-500 dark:text-green-400 text-5xl opacity-20">bar_chart</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+<div class="xl:col-span-2 space-y-6">
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Notifications</h3>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View All</a>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+<span class="material-icons-outlined text-blue-500 dark:text-blue-400 mt-1">event</span>
+<div>
+<p class="text-sm text-gray-800 dark:text-gray-200"><span class="font-semibold">Scheduled Visit:</span> LL126 inspection for <span class="font-semibold">123 Main St</span> is scheduled for Dec 15, 2024.</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">2 hours ago</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+<span class="material-icons-outlined text-red-500 dark:text-red-400 mt-1">notifications</span>
+<div>
+<p class="text-sm text-gray-800 dark:text-gray-200"><span class="font-semibold">Invoice #I-2024-345</span> for <span class="font-semibold">456 Park Ave</span> is due on Dec 20, 2024.</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">8 hours ago</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+<span class="material-icons-outlined text-green-500 dark:text-green-400 mt-1">check_circle</span>
+<div>
+<p class="text-sm text-gray-800 dark:text-gray-200"><span class="font-semibold">Invoice #I-2024-341</span> for <span class="font-semibold">789 Broadway</span> has been paid.</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">1 day ago</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+<span class="material-icons-outlined text-yellow-500 dark:text-yellow-400 mt-1">photo_camera</span>
+<div>
+<p class="text-sm text-gray-800 dark:text-gray-200"><span class="font-semibold">Photo Request:</span> Please upload correction photos for defects found at <span class="font-semibold">789 Broadway</span>.</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">3 days ago</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Live Projects</h3>
+<div class="space-y-5">
+<div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+<div class="flex justify-between items-center">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">LL152 - 123 Main St</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Gas Piping Inspection</p>
+</div>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View Details</a>
+</div>
+<div class="mt-4">
+<p class="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Progress: <span class="font-bold text-gray-800 dark:text-gray-100">75%</span></p>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+</div>
+<div class="mt-3 flex items-start gap-3">
+<span class="material-icons-outlined text-sm text-green-500 mt-0.5">check_circle</span>
+<div>
+<p class="text-sm text-gray-700 dark:text-gray-300">Last update: Report Generated</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Dec 18, 2024</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+<div class="flex justify-between items-center">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">LL97 - 456 Park Ave</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Carbon Emissions Report</p>
+</div>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View Details</a>
+</div>
+<div class="mt-4">
+<p class="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Progress: <span class="font-bold text-gray-800 dark:text-gray-100">40%</span></p>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+</div>
+<div class="mt-3 flex items-start gap-3">
+<span class="material-icons-outlined text-sm text-blue-500 mt-0.5">sync</span>
+<div>
+<p class="text-sm text-gray-700 dark:text-gray-300">Last update: Data Collection In-Progress</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Dec 17, 2024</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+<div class="flex justify-between items-center">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">LL84 - 789 Broadway</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Benchmarking Submission</p>
+</div>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View Details</a>
+</div>
+<div class="mt-4">
+<p class="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Progress: <span class="font-bold text-gray-800 dark:text-gray-100">100%</span></p>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-green-600 h-2.5 rounded-full" style="width: 100%"></div>
+</div>
+<div class="mt-3 flex items-start gap-3">
+<span class="material-icons-outlined text-sm text-green-500 mt-0.5">verified</span>
+<div>
+<p class="text-sm text-gray-700 dark:text-gray-300">Status: Complete</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Dec 16, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Pending Attestations</h3>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View All</a>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">456 Park Ave</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">LL152 GPS-2 Attestation</p>
+</div>
+<button class="text-sm font-semibold bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition-colors">Start</button>
+</div>
+<div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">10 Hanover Square</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">LL126 GAS-1 Attestation</p>
+</div>
+<button class="text-sm font-semibold bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition-colors">Start</button>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Pending Energy Checklists</h3>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View All</a>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">200 Water St</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">LL97 Carbon Emissions</p>
+</div>
+<button class="text-sm font-semibold bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 transition-colors">Complete</button>
+</div>
+<div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">333 East 46th St</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">LL84 Benchmarking</p>
+</div>
+<button class="text-sm font-semibold bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 transition-colors">Complete</button>
+</div>
+<div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">500 West 42nd St</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">LL97 Carbon Emissions</p>
+</div>
+<button class="text-sm font-semibold bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 transition-colors">Complete</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Scheduled Visits (Today)</h3>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View All</a>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">123 Main St</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">LL126 Inspection - 10:00 AM</p>
+</div>
+<span class="material-icons-outlined text-orange-500">event_available</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">789 Broadway</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">LL152 Inspection - 2:00 PM</p>
+</div>
+<span class="material-icons-outlined text-orange-500">event_available</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Recent Properties</h3>
+<div class="space-y-3">
+<a class="flex items-center justify-between p-3 rounded-md bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors" href="#">
+<div class="flex items-center gap-2">
+<div class="bg-gray-200 dark:bg-gray-700 rounded p-1"><span class="material-icons-outlined text-gray-600 dark:text-gray-400 text-base">apartment</span></div>
+<div>
+<p class="font-medium text-sm text-gray-800 dark:text-gray-200">10 Hanover Square</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Added Dec 4, 2024</p>
+</div>
+</div>
+<span class="material-icons-outlined text-gray-500 dark:text-gray-400 text-lg">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-md bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors" href="#">
+<div class="flex items-center gap-2">
+<div class="bg-gray-200 dark:bg-gray-700 rounded p-1"><span class="material-icons-outlined text-gray-600 dark:text-gray-400 text-base">apartment</span></div>
+<div>
+<p class="font-medium text-sm text-gray-800 dark:text-gray-200">200 Water St</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Added Nov 28, 2024</p>
+</div>
+</div>
+<span class="material-icons-outlined text-gray-500 dark:text-gray-400 text-lg">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Recent Proposals</h3>
+<div>
+<h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Pending Signature</h4>
+<div class="space-y-2">
+<a class="p-3 rounded-md border border-yellow-300 dark:border-yellow-700 bg-yellow-50 dark:bg-yellow-900/30 block hover:bg-yellow-100 dark:hover:bg-yellow-800/30 transition-colors" href="#">
+<p class="font-medium text-sm text-yellow-800 dark:text-yellow-200">Proposal #P-2024-098</p>
+<p class="text-xs text-yellow-600 dark:text-yellow-400">For 333 East 46th St</p>
+</a>
+</div>
+</div>
+<div class="mt-4">
+<h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Recently Signed</h4>
+<div class="space-y-2">
+<a class="p-3 rounded-md border border-green-300 dark:border-green-700 bg-green-50 dark:bg-green-900/30 block hover:bg-green-100 dark:hover:bg-green-800/30 transition-colors" href="#">
+<p class="font-medium text-sm text-green-800 dark:text-green-200">Proposal #P-2024-095</p>
+<p class="text-xs text-green-600 dark:text-green-400">For 500 West 42nd St</p>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Recent Invoices</h3>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View All</a>
+</div>
+<div class="space-y-3">
+<a class="flex items-center justify-between p-3 rounded-md border border-red-300 dark:border-red-700 bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-800/30 transition-colors" href="#">
+<div>
+<p class="font-medium text-sm text-red-800 dark:text-red-200">Invoice #I-2024-345</p>
+<p class="text-xs text-red-600 dark:text-red-400">For 456 Park Ave</p>
+</div>
+<span class="text-xs font-semibold text-red-700 dark:text-red-300 bg-red-200 dark:bg-red-800/50 px-2 py-1 rounded-full">Pending</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-md border border-green-300 dark:border-green-700 bg-green-50 dark:bg-green-900/30 hover:bg-green-100 dark:hover:bg-green-800/30 transition-colors" href="#">
+<div>
+<p class="font-medium text-sm text-green-800 dark:text-green-200">Invoice #I-2024-341</p>
+<p class="text-xs text-green-600 dark:text-green-400">For 789 Broadway</p>
+</div>
+<span class="text-xs font-semibold text-green-700 dark:text-green-300 bg-green-200 dark:bg-green-800/50 px-2 py-1 rounded-full">Paid</span>
+</a>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Compliance Document Requests</h3>
+<a class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline" href="#">View All</a>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-4 p-3 bg-yellow-50 dark:bg-yellow-900/30 rounded-lg">
+<span class="material-icons-outlined text-yellow-600 dark:text-yellow-400 mt-1">upload_file</span>
+<div>
+<p class="font-medium text-sm text-yellow-800 dark:text-yellow-200">Defect Correction Photo</p>
+<p class="text-xs text-yellow-600 dark:text-yellow-400">Requested for 789 Broadway - LL152</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3 bg-yellow-50 dark:bg-yellow-900/30 rounded-lg">
+<span class="material-icons-outlined text-yellow-600 dark:text-yellow-400 mt-1">upload_file</span>
+<div>
+<p class="font-medium text-sm text-yellow-800 dark:text-yellow-200">Signed Proposal</p>
+<p class="text-xs text-yellow-600 dark:text-yellow-400">Upload for project #P-2024-098</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-6 right-6">
+<button class="bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition-colors">
+<span class="material-icons-outlined">support_agent</span>
+</button>
+</div>
+</div>
+</body></html>
